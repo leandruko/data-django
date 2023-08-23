@@ -81,6 +81,28 @@ DATABASES = {
     }
 }
 
+'''
+PRIMERO pip install psycopg2
+SEGUNDO
+PARA REALIZAR LA CONEXION A LA BASE DE DATOS POSTGRESQL
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'nombre_de_la_base_de_datos',
+        'USER': 'usuario',
+        'PASSWORD': 'contraseña',
+        'HOST': 'localhost',
+        'PORT': '5432',  # Puerto por defecto de PostgreSQL
+    }
+}
+
+Y DESPUES REALIZAR LAS MIGRACIONES
+python manage.py makemigrations
+python manage.py migrate
+
+'''
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
