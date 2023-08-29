@@ -46,6 +46,14 @@ INSTALLED_APPS = [
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 X_FRAME_OPTIONS = "SAMEORIGIN"
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'  # Configura el host del servidor SMTP que estás usando
+EMAIL_PORT = 25  # Puerto del servidor SMTP
+EMAIL_USE_TLS = True  # Utiliza TLS para la conexión
+EMAIL_USE_SSL = False  # No utilices SSL
+EMAIL_HOST_USER = 'itataservs@gmail.com'  # Tu dirección de correo electrónico
+EMAIL_HOST_PASSWORD = 'ygibcocxhghosznb'  # La contraseña de tu correo
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -150,3 +158,4 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
